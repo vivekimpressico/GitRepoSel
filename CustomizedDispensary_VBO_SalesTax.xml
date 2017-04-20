@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<test name="CustomizedDispensary">
+		<classes>
+			<class
+				name="com.wellevate.customdispensary.TestCustomizedDispensaryButtonDisplayAftrerRecommentionPage" />
+			<class
+				name="com.wellevate.customdispensary.TestCustomizedDispensaryVisibilityInDispensaryPage" />
+			<class
+				name="com.wellevate.customdispensary.TestCustomizedDispensaryVisibilityInQuickAddPage" />
+			<class
+				name="com.wellevate.customdispensary.TestPractitionerCreatingAccountsVerifyProductVisbilityInCustomizedDispensary" />
+			<class
+				name="com.wellevate.customdispensary.TestVerifyExistingfunctionalityCustomDispensarySetUp" />
+			<class
+				name="com.wellevate.customdispensary.TestVerifyPateintAbleToSeeSameProductAfterPractitionerAddProduct" />
+		</classes>
+	</test>
+	<test name="VendorBack">
+		<classes>
+			<class
+				name="com.wellevate.vendorbackorder.TestVendorBackOrderDispensaryAndFavorites" />
+			<class
+				name="com.wellevate.vendorbackorder.TestVBOProductRecommendationForOrder" />
+			<class
+				name="com.wellevate.vendorbackorder.TestPatientRecommendationWithVendorBackOrder" />
+			<class
+				name="com.wellevate.vendorbackorder.TestPatientVBOProductAddToCartPopUp" />
+		</classes>
+	</test>
+
+	<test name="SalesTax">
+		<classes>
+			<class name="com.wellevate.salestax.TestNonNexusStateSalesTaxValidation" />
+			<class
+				name="com.wellevate.salestax.TextNexusStateSalesTaxValidationNewUser" />
+			<class
+				name="com.wellevate.salestax.TestPatientPlaceOrderNexusPractitioner" />
+			<class
+				name="com.wellevate.salestax.TestPractitionerAdditionalStateNonNexus" />
+			<class
+				name="com.wellevate.salestax.TestPatientPlaceOrderNonNexusPractitioner" />
+			<class
+				name="com.wellevate.salestax.TestPatientPlaceOrderNonTexablePractitioner" />
+			<class
+				name="com.wellevate.salestax.TestPractitionerAddDeleteAdditionalStates" />
+			<class name="com.wellevate.salestax.TestTaxValiadationNonTaxableUser" />
+			
+			<class
+				name="com.wellevate.salestax.TestVerifySalesTaxPageAppearForNonNexusStateChanges" />
+			<class
+				name="com.wellevate.salestax.TestVerifyTaxableStateCanOptoutNonTaxableOrNot" />
+		</classes>
+	</test>
+</suite> 
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<test name="Practitioner_Global_Discount">
+		<classes>
+			<class name="com.wellevate.patientdiscount.TestPractitionerProfitBarChangesAccountHavingNoPatient" />
+			<class
+				name="com.wellevate.patientdiscount.TestPractitionerHavingOnlyOneGlobalPatientsVerifyThePopupAppear" />
+		</classes>
+	</test>
+	<test name="Practitioner_ProfitBar_Changes_Popup">
+		<classes>
+			<class
+				name="com.wellevate.patientdiscount.TestMessagePromtDisplayYesApplyToAllPatient" />
+			<class
+				name="com.wellevate.patientdiscount.TestMessagePromtDisplayNoApplyToAllPatient" />
+		</classes>
+	</test>
+	<test name="Patients_Discount_Changes_AddNew_Recommend_Edit">
+		<classes>
+			<class
+				name="com.wellevate.patientdiscount.TestPatientSpecificDiscountFromAddNewRecommended" />
+			<class name="com.wellevate.patientdiscount.TestEditthePatientDiscountThroughEditButtonInPatientDetailsPage" />
+		</classes>
+	</test>
+
+	<test name="Practitioner_AbleTo_Revert_PatientsDetails_Recommend">
+		<classes>
+			<class
+				name="com.wellevate.patientdiscount.TestPractitionerAbleToRevertInPatientsDetailsPage" />
+			<class
+				name="com.wellevate.patientdiscount.TestPractitionerAbleToRevertRecommendInPatientDetailsPage" />
+		</classes>
+	</test>
+
+	<test name="Practtiner_Dispensary_Discount">
+		<classes>
+			<class
+				name="com.wellevate.patientdiscount.TestPractitionerDispensaryPageProductDiscount" />
+			<class
+				name="com.wellevate.PractitionerAccount.TestPractitionerProductAcessForPatient" />
+		</classes>
+
+	</test>
+	<test name="Patients_Global_PatientsSpecfic_Discount">
+		<classes>
+			<class name="com.wellevate.patientdiscount.TestGlobalPatientsDiscountPlaceOrder" />
+			<class name="com.wellevate.patientdiscount.TestPatientsSpecificDiscountPlaceOrder" />
+		</classes>
+	</test>
+	</suite> 

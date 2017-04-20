@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Patient_Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<parameter name="runningForPatient" value="true"/>
+	<test name="selectedAPITesting">
+		<groups>
+			<run>
+				<include name="patient" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.emerson.withResponseVerification.AccountCreationApiVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountCredentialsVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountAddressVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountPaymentApiVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountEmailPreferencesVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountBrandAgreementsVerification" />
+			<class
+				name="com.emerson.withResponseVerification.AccountOrderVerification" />
+			<class name="com.emerson.withResponseVerification.AccountRXVerification" />
+			<class name="com.emerson.withResponseVerification.AdminAllAPIVerification" />
+			<class
+				name="com.emerson.withResponseVerification.CheckoutAllAPIVerificationTest" />
+			<class
+				name="com.emerson.withResponseVerification.ContentAllAPIVerification" />
+			<class
+				name="com.emerson.withResponseVerification.OrderHistoryAllAPIVerificationTest" />
+			<class
+				name="com.emerson.withResponseVerification.ProductAllAPIVerificationTest" />
+		</classes>
+	</test>
+</suite> 

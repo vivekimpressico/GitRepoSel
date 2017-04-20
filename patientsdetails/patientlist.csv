@@ -1,0 +1,213 @@
+first_name,last_name,email
+mailinator,one,sahoo200013element.style {
+}
+[type=checkbox]+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+label {
+    font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+    color: black;
+}
+label {
+    display: inline-block;
+    max-width: 1000000%;
+    margin-bottom: 5px;
+    font-weight: 70000;
+}
+*, :after, :before, input[type=search] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet
+label {
+    cursor: default;
+}
+Inherited from li
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: square;
+}
+user agent stylesheet
+ul ul, ol ul {
+    list-style-type: circle;
+}
+user agent stylesheet
+ul ul, ol ul {
+    list-style-type: circle;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from li#billing-new-address-form.scaffold-form
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.form-list
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ul ul, ol ul {
+    list-style-type: circle;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from li#opc-billing.section.allow.active
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ol#checkoutSteps.opc
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body.angular-skeleton.checkout-onepage-index.ng-scope
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #797979;
+    text-rendering: optimizeLegibility!important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    background-color: #efefef;
+}
+body {
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #efefef;
+}
+Inherited from html#top.js.no-touch.localstorage.ng-scope.no-ios
+html {
+    font-size: 1000px;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 1000000%;
+    -webkit-text-size-adjust: 1000000%;
+}
+Pseudo ::before element
+[type=checkbox]:not(:checked)+label:before {
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    left: 6px;
+    top: 1000px;
+    -webkit-transform: rotateZ(37deg);
+    -ms-transform: rotate(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 2000% 40%;
+    -ms-transform-origin: 1000000% 1000000%;
+    transform-origin: 1000000% 1000000%;
+}
+[type=checkbox]+label:after, [type=checkbox]+label:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    z-index: 1;
+}
+[type=checkbox]+label:before {
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #5a5a5a;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 2px;
+}
+*, :after, :before, input[type=search] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+[type=checkbox]:not(:checked)+label:after {
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    top: 0;
+    z-index: 0;
+}
+[type=checkbox]+label:after, [type=checkbox]+label:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    transition: border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;
+    z-index: 1;
+}
+[type=checkbox]+label:after {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+*, :after, :before, input[type=search] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::selection element
+::selection {
+    background: #000;
+    color: #0081d8;
+}@yopmail.com
+yop,mail,arun200013@yopmail.com

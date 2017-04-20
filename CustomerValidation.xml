@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	
+	<test name="Login_Signup_Validation">
+		<classes>
+			<class name="com.wellevate.Validation.TestLoginValidation" />
+			<class
+				name="com.wellevate.Validation.TestSignUpProfessionalPageValidation" />
+			<class
+				name="com.wellevate.Validation.TestProfessionalSignUpAddressValidation" />
+			
+			<class name="com.wellevate.Validation.TestForgotPassword" />
+			<class
+				name="com.wellevate.Validation.TestPractitionerPasswordValidationReset" />
+		</classes>
+	</test>
+
+	<test name="Practitioner_SetUp_Validation">
+		<classes>
+			<class
+				name="com.wellevate.Validation.TestConfirmationMessageBoxValidation" />
+			<class
+				name="com.wellevate.Validation.TestPractitionerAbleToSearchProducts" />
+			<class
+				name="com.wellevate.Validation.TestTextfieldChangesReflectOrNotFileUpload" />
+		</classes>
+	</test>
+
+	<test name="Patient_SignUp_Validation">
+		<classes>
+			<class name="com.wellevate.Validation.TestPatientsSignUpValidation" />
+			<class
+				name="com.wellevate.Validation.TestPatientAddressInformationValidation" />
+			<class name="com.wellevate.Validation.TestPatientPasswordValidationReset" />
+		</classes>
+	</test>
+	<test name="Practitoner_Invites_Patients">
+		<classes>
+			<class
+				name="com.wellevate.PractitionerInvitePatients.TestPatientsRegisteredTypeInPractitionerAccount" />
+			<class
+				name="com.wellevate.PractitionerInvitePatients.TestPractitIonerSelectInviteOnlyThenCopyUrlForPatientSignUp" />
+			<class
+				name="com.wellevate.PractitionerInvitePatients.TestPatientSignUpThroughOpenAcess" />
+			<class
+				name="com.wellevate.PractitionerInvitePatients.TestPatientRegistrationThroughPractitionerDispensaryUrl" />
+			<class
+				name="com.wellevate.PractitionerInvitePatients.TestPatientSignUpForAlreadyExistPatientAccount" />
+		</classes>
+	</test>
+</suite> 
+
