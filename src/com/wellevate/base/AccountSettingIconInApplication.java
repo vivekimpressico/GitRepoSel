@@ -56,7 +56,7 @@ public class AccountSettingIconInApplication extends BasePage {
 				accountSectionButton().click();
 				elementWait(3000);
 			} catch (NoSuchElementException e) {
-				Reporter.log("Fail: Web Element Not Found");
+				Reporter.log("Fail: Web Element Not Found:");
 			}
 			return element;
 		}
