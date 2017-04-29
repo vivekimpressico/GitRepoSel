@@ -114,7 +114,7 @@ public class TestVerifyExistingfunctionalityCustomDispensarySetUp {
 		jse.executeScript("scroll(0,-150000)");
 		// Fav Select in Dispensary
 		basepage.elementWait(5000);
-		productsearch.clickOnProducts(1);
+		productsearch.clickOnProducts(0);
 		basepage.elementWait(5000);
 		SoftAssertions.verifyEquals(dispensaryAccount.addProductToCustomDispensary(), "false",
 				"Add to Custom Dispensary is displayed in Product details Page",
@@ -129,40 +129,52 @@ public class TestVerifyExistingfunctionalityCustomDispensarySetUp {
 	@SuppressWarnings({ "static-access", "unused" })
 	@Test(priority = 3)
 	public void customizedDispensaryRecommendation() throws InterruptedException, IOException {
-		basepage.elementWait(2000);
-		jse.executeScript("scroll(0,50000)");
-		basepage.elementWait(5000);
-		patitentsrecoemened.prRecommenedButton().click();
-		basepage.elementWait(5000);
-		patitentsrecoemened.patientsSearch().sendKeys(actPatientsName);
-		basepage.elementWait(5000);
-		patitentsrecoemened.clickOnPatientName(0);
-		basepage.elementWait(2000);
-		jse.executeScript("scroll(0,50000)");
-		basepage.elementWait(2000);
-		patitentsrecoemened.addProducts().click();
-		basepage.elementWait(5000);
-		jse.executeScript("scroll(0,50000)");
-		basepage.elementWait(2000);
-		// Fav Select in Dispensary
-		String dispensaryType = dispensaryAccount.switchDispensary();
-		basepage.elementWait(2000);
-		if (dispensaryType != null)
-			if (dispensaryType.equalsIgnoreCase(genericMethods.ConfigFile("dispensaryTypeShopAlLRecommendation"))) {
-				dispensaryAccount.shopAllRecommendationPage().click();
-			}
-		basepage.elementWait(5000);
-		productsearch.clickOnProducts(1);
-		basepage.elementWait(5000);
-		SoftAssertions.verifyEquals(dispensaryAccount.addProductToCustomDispensary(), "false",
-				"Add to Custom Dispensary is displayed in Product details Page",
-				"Add to Custom Dispensary is not displayed in Product details Page");
-		basepage.elementWait(5000);
-		dispensaryAccount.productdetailsClose().click();
-		BasePage.elementWait(5000);
-		SoftAssertions.throwAsserationOnFailure();
+	aa();
 	}
-
+      
+	private void aa(){
+		try {
+			
+			basepage.elementWait(2000);
+			jse.executeScript("scroll(0,50000)");
+			basepage.elementWait(5000);
+			patitentsrecoemened.prRecommenedButton().click();
+			basepage.elementWait(5000);
+			patitentsrecoemened.patientsSearch().sendKeys(actPatientsName);
+			basepage.elementWait(5000);
+			patitentsrecoemened.clickOnPatientName(0);
+			basepage.elementWait(2000);
+			jse.executeScript("scroll(0,50000)");
+			basepage.elementWait(2000);
+			patitentsrecoemened.addProducts().click();
+			basepage.elementWait(5000);
+			jse.executeScript("scroll(0,50000)");
+			basepage.elementWait(2000);
+			//Fav Select in Dispensary
+			String dispensaryType = dispensaryAccount.switchDispensary();
+			basepage.elementWait(2000);
+			if (dispensaryType != null)
+				if (dispensaryType.equalsIgnoreCase(genericMethods.ConfigFile("dispensaryTypeShopAlLRecommendation"))) {
+					dispensaryAccount.shopAllRecommendationPage().click();
+				}
+			basepage.elementWait(5000);
+			jse.executeScript("scroll(0,-25000)");
+			Thread.sleep(3000);
+			productsearch.clickOnProducts(0);
+			basepage.elementWait(5000);
+			SoftAssertions.verifyEquals(dispensaryAccount.addProductToCustomDispensary(), "false",
+					"Add to Custom Dispensary is displayed in Product details Page",
+					"Add to Custom Dispensary is not displayed in Product details Page");
+			basepage.elementWait(5000);
+			dispensaryAccount.productdetailsClose().click();
+			BasePage.elementWait(4000);
+			SoftAssertions.throwAsserationOnFailure();
+			
+		} catch (Exception e) {
+			
+		}
+	}
+	
 	@AfterClass
 	public void closeAPP() throws InterruptedException {
 		driver.quit();
